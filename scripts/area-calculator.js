@@ -22,3 +22,23 @@ function calculateTriangleArea(){
 
 }
 
+function calculateRectangleArea(){
+    // get rectangle width value
+    const widthField= document.getElementById("rectangle-width");
+    const widthValueText= widthField.value;
+    const width = parseFloat(widthValueText);
+    console.log(width);  
+
+    // get rectangle length
+    const lengthField= document.getElementById("rectangle-height");
+    const rectangleValueText= lengthField.value ;
+    const length = parseFloat(rectangleValueText);
+    console.log(length);
+
+    // calculate area
+    const area = width * length ;
+
+    // show rectangle area
+    const rectangleAreaSpan= document.getElementById("rectangle-area");
+    rectangleAreaSpan.innerText = area;
+}
